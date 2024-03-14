@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investors</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #top {
+        width: 80%;
+        /* border: 1px solid red; */
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 200px;
+        margin-left: 110px;
+        margin-top: 20px;
+        grid-template-areas:
+          "bm bm bm "
+          "iq us oni";
+        gap: 10px;
+      }
+      #top > div {
+        /* border: 1px solid rgb(13, 11, 11); */
+      }
+
+      #top :nth-child(1) {
+        grid-area: bm;
+        text-align: center;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #top :nth-child(2) {
+        grid-area: iq;
+      }
+
+      #top :nth-child(3) {
+        grid-area: us;
+      }
+      #top :nth-child(4) {
+        grid-area: oni;
+      }
+      #imgg {
+        width: 100%%;
+      }
+      @media all and (min-width: 450px) and (max-width: 809px) {
+        #top {
+          grid-template-columns: repeat(3, 1fr);
+          /* grid-template-areas: ; */
+          grid-template-areas:
+            "bm bm bm "
+            "iq us oni";
+        }
+        #imgg {
+          width: 100%;
+        }
+        #top :nth-child(1) > h1 {
+          font-size: 30px;
+        }
+      }
+
+      @media all and (min-width: 515px) and (max-width: 615px) {
+        #top {
+          grid-template-columns: repeat(3, 1fr);
+          /* grid-template-areas: ; */
+          grid-template-areas:
+            "bm bm bm "
+            "iq us oni";
+        }
+        #imgg {
+          width: 100%;
+        }
+      }
+      @media all and (min-width: 80px) and (max-width: 514px) {
+        #top {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: 100px 100px 100px 100px;
+          grid-template-areas:
+            "bm  "
+            "iq"
+            "us"
+            "oni";
+        }
+        #imgg {
+          width: 100%;
+          gap: 20px;
+        }
+
+        #top {
+          margin-left: 30px;
+        }
+      }
+
+
+
+
+      #midd {
+        /* height: 2100px; */
+        width: 96%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 400px 400px 400px 400px 400px 400px;
+        gap: 20px;
+        margin: 10px;
+        padding: 10px;
+       
+      }
+
+      #midd > div {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+          rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          border-radius: 10px;
+          border-top: 8px solid rgb(216, 221, 227);
+      }
+      
+
+      
+
+
+      
+
+        
+      @media all and (min-width: 432px) and (max-width: 1000px) {
+        #midd {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: 400px 400px 400px 400px 400px 400px 400px;
+        }
+      }
+
+ 
+      @media all and (min-width: 512px) and (max-width: 742px) {
+        #midd {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px;
+        }
+      }
+
+
+
+
+      @media all and (min-width: 80px) and (max-width: 513px) {
+        #midd {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px;
+        }
+      }
+
+
+    #midd :nth-child(1){
+      text-align: center;
+    }
+    #midd :nth-child(2){
+      text-align: center;
+    } #midd :nth-child(3){
+      text-align: center;
+    } #midd :nth-child(4){
+      text-align: center;
+    } #midd :nth-child(5){
+      text-align: center;
+    } #midd :nth-child(6){
+      text-align: center;
+    } #midd :nth-child(7){
+      text-align: center;
+    } #midd :nth-child(8){
+      text-align: center;
+    } #midd :nth-child(9){
+      text-align: center;
+    } #midd :nth-child(10){
+      text-align: center;
+    } #midd :nth-child(11){
+      text-align: center;
+    } #midd :nth-child(12){
+      text-align: center;
+    } #midd :nth-child(13){
+      text-align: center;
+    } #midd :nth-child(14){
+      text-align: center;
+    } #midd :nth-child(15){
+      text-align: center;
+    } #midd :nth-child(16){
+      text-align: center;
+    } #midd :nth-child(17){
+      text-align: center;
+    } #midd :nth-child(18){
+      text-align: center;
+    } #midd :nth-child(19){
+      text-align: center;
+    }
+    #imgg2{
+      height: 12%;
+    }
+#imgg{
+  width: 100%;
+  height: 74%;
+}
+
+
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div id="top">
+      <div>
+        <h1>Board Members</h1>
+      </div>
+
+      <div>
+        <img id="imgg" src="img1/iq.svg" />
+      </div>
+
+      <div>
+        <img id="imgg" src="img1/c.svg" />
+      </div>
+
+      <div>
+        <img id="imgg" src="img1/oni.svg" />
+      </div>
+    </div>
+
+    <div id="midd">
+      <div>
+<img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg">
+<h3>Vijay shekhar sharma</h3>
+<p>Founder & CEO</p>
+<img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg">
+
+      </div>
+
+
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png">
+<h3>Vijay shekhar sharma</h3>
+<p>Founder & CEO</p>
+<img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png">
+
+        </div>
+
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/care24_1164f7a2cd.png">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/livspace_f9318b2e8d.png">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Mohit_Tandon_Delhivery_b43fee16c4.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/delhivery_17e85a76ed.png">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Abhishek_Goyal_tracxn_5b2f61d87d.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/tracxn_6d0c3de2ee.svg">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Anurag_Jain_Kredx_b6ed6a31c6.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/kredx_rect_204437078a.svg">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Harshvardhan_Lunia_Lendingkart_44d72a6fcd.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/lendingkart_rect_d0d30d7b53.svg">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sunil_rao_amazon_dfd2daa06d.jpeg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amazon_rect_9e0cd101b1.svg">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sharda_Balaji_Novojuris_2a206f2f88.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/novojuris_ad9499f5b9.svg">
+        
+      </div>
+      <div>
+        <img id="imgg" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Kulin_Shah_Onsurity_0dd3a1802f.jpg">
+        <h3>Vijay shekhar sharma</h3>
+        <p>Founder & CEO</p>
+        <img id="imgg2"  src="https://masai-website-images.s3.ap-south-1.amazonaws.com/onsurity_5500f1c3b1.png">
+        
+      </div>
+    </div>
+
+
+    
+
+
+  </body>
+</html>
