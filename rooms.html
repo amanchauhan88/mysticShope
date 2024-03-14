@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#main{
+    margin-top: 30px;
+    display: grid;
+    border: 1 solid red;
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 150px 200px 120px;
+    grid-template-areas: "pnk pnk pnk"
+                "bla grn blu"
+                "org gg pii"  ;
+                gap: 20px;
+                justify-content: center;
+}
+#top{
+    grid-area: pnk ;
+    /* display: flex; */
+    justify-content: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
+
+
+}
+#top h1{
+margin-bottom: 14px;
+font-size: 40px;
+color: orange;
+
+}
+#main>div{
+    /* border: 1px solid black; */
+}
+
+#main>:nth-child(2){
+    grid-area: bla;
+}
+#main>:nth-child(3){
+    grid-area: grn;
+}
+#main>:nth-child(4){
+    grid-area: blu;
+}#main>:nth-child(5){
+    grid-area: org;
+    text-align: center;
+    
+}
+#rent{
+    color: orange;
+
+}
+
+#main>:nth-child(6){
+    grid-area: gg;
+    text-align: center;
+
+
+}
+#main>:nth-child(7){
+    grid-area: pii;
+    text-align: center;
+
+}
+
+#immg{
+    width: 269px;
+    height: 198px;
+}
+@media all and (min-width:450px) and (max-width:750px){
+             
+             #main{
+                 grid-template-columns: repeat(2, 1fr);
+                 grid-template-areas: 
+                "pnk pnk "
+                "bla grn"
+                "org  gg"
+                "blu  blu  "
+                "pii  pii "  ;
+                 
+             }
+
+             #main>:nth-child(7)> h2 {
+    margin-right: 250px;
+    
+
+}
+#main>:nth-child(7)> h5 {
+    margin-right: 250px;
+    
+
+}
+
+ 
+         }
+
+         @media all and (min-width:80px) and (max-width:449px){
+             
+             #main{
+                 grid-template-columns: repeat(1, 1fr);
+                 grid-template-areas: 
+                 "pnk"
+                 "bla"
+                 "org"
+                 "grn"
+                 "gg"
+                 "blu"
+                 "pii";
+
+                 
+             }
+             #top p{
+                font-size: xx-small;
+                
+             }
+             #top h1{
+                font-size:20px;
+                
+             }
+             #top{
+                padding:0; 
+             }
+ 
+         }
+ 
+
+
+</style>
+
+
+</head>
+<body>
+    <div id="main">
+
+    <div id="top">
+        <h1>Rooms & Suits</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ex necessitatibus magni aliquam sunt vitae dicta cupiditate rerum? Velit unde, quam reiciendis ipsum minima quaerat itaque quisquam est maxime consequuntur.</p>
+    </div>
+
+    
+
+    <div>
+        <img id="immg" src="img1/bd1.webp">
+    </div>
+
+    <div>
+        <img id="immg" src="img1/bd2.webp">
+
+    </div>
+
+    <div>
+        <img id="immg" src="img1/bd3.webp">
+
+    </div>
+
+    <div>
+        <h2>Single Room </h2><br>
+        <h5 id="rent">90$/ PER NIGHT</h5>
+    </div>
+
+    <div>
+        <h2>Single Room </h2><br>
+        <h5 id="rent">90$/ PER NIGHT</h5>
+    </div>
+
+    <div>
+        <h2>Single Room </h2><br>
+        <h5 id="rent">90$/ PER NIGHT</h5>
+    </div>
+
+
+</div>
+    
+</body>
+</html>
